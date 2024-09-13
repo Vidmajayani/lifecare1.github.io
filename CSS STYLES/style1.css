@@ -1,0 +1,2567 @@
+* {
+    margin: 0;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    padding: 5px 0;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin-right: 5px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 5px 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+    border: 2px solid white;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-image: url(../Images/hero-home.jpg); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;  /* Horizontally centers the content */
+    align-items: center;      /* Vertically centers the content */
+}
+
+.hero-text {
+    color: white;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* Center-aligns text inside the box */
+    font-size: 80px;
+}
+
+.hero-text h2 {
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 0px auto; 
+    padding: 40px; 
+    background-color: #000080;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.container p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+.container p:first-of-type {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+.container p:last-of-type {
+    margin-bottom: 0;
+}
+
+.content-section {
+    background-color: rgb(42, 223, 230);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+.content-section2 {
+    background-color: rgb(42, 223, 230);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+
+.Emergency-content {
+    background-color: rgb(42, 223, 230);
+    max-width: 100%;
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 20px;
+    color: black;
+    text-align: justify;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    margin-top: 60px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 25px;
+    color: #000080;
+    font-weight: bold;
+}
+
+li {
+    margin-left: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.International-content {
+    background-color: rgb(42, 223, 230);
+    max-width: 100%;
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 20px;
+    line-height: 1.5;
+    color: black;
+    text-align: justify;
+}
+
+.Outpatient-content {
+    background-color: rgb(42, 223, 230);
+    max-width: 100%;
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 20px;
+    line-height: 1.5;
+    color: black;
+    text-align: justify;
+}
+
+ol {
+    padding-left: 20px;
+    margin-top: 10px;
+    line-height: 2;
+    font-size: 17px;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.section4-img img {
+    width: 100%;
+    height: 80%;
+    display: block;
+    max-width: 100%;
+    margin-top: 60px;
+}
+
+/* Existing styling for the facility section */
+.facility-section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns, each taking equal space */
+    gap: 20px;
+    padding: 40px;
+    max-width: 100%; /* Ensure the section spans the entire width */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    background-color: black;
+    margin-top: 7px;
+}
+
+/* Existing styling for each facility box */
+.facility-box {
+    background-color: #000080;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+/* Animation effect when the box is clicked or touched */
+.facility-box:active {
+    transform: scale(1.2); /* Slightly larger box on click/touch */
+}
+
+/* Optional: Hover effect for desktop */
+.facility-box:hover {
+    transform: scale(1.2); /* Slightly larger box on hover */
+}
+
+/* Existing styling for images within the facility boxes */
+.facility-box img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 10px;
+}
+
+/* Existing styling for text within the facility boxes */
+.facility-box p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #004d66; /* Main footer color */
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four equal columns for desktop */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 50px;
+}
+
+.footer-left,
+.footer-nav,
+.footer-contacts,
+.footer-socials {
+    text-align: left;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #007a99;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    background-color: #00ccff;
+}
+
+.footer-contacts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contacts ul li {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-contacts h3 {
+    color: white;
+}
+
+.footer-socials {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-socials h3 {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    color: wheat;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjust gap between left and right columns */
+}
+
+.column-left, .column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between icons in each column */
+}
+
+.social-icons img {
+    width: 60px; /* Icon size */
+    height: 60px;
+}
+
+.social-icons a:hover img {
+    filter: invert(50%); /* Optional hover effect */
+}
+
+.emergency-contact {
+    background-color: black;
+    color: #00ffcc;
+    text-align: center;
+    padding: 20px;
+}
+
+.emergency-contact h3 {
+    color: #00ffcc;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #003d4d;
+    font-size: 14px;
+}
+
+
+/* About Us Page CSS Design*/
+
+.hero-about-section {
+    position: relative;
+    background-image: url(../Images/hero-about.jpg); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;  /* Horizontally centers the content */
+    align-items: center;      /* Vertically centers the content */
+}
+
+.branch {
+    background-color: rgb(42, 223, 230);
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-title {
+    background-color: #666;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.branch-title {
+    background-color: #444;
+    color: #fff;
+    padding: 5px;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.branch-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    align-items: start;
+    line-height: 1.5;
+}
+
+.branch-image {
+    width: 300px;
+    height: 150px;
+    display: block;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #eee;
+    grid-row: span 2;
+    margin-bottom: 15px;
+}
+
+.branch-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.branch-info p {
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.branch-paragraph {
+    margin-left: -320px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.branch-details {
+    list-style-type: disc;
+    margin-left: -310px;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.branch-location {
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    grid-row: span 2;
+    width: 0;
+    height: 0 auto;
+    margin-right: 10px;
+}
+
+.about-table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #191970;
+}
+
+.about-table th, .about-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.about-table td {
+    color: whitesmoke;
+}
+
+.about-table th {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.about-table tr {
+    font-size: 15px;
+}
+
+.about-table td img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+.about-table td[colspan="6"] {
+    background-color: #191970;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+td p {
+    margin: 0 0 20px 0;
+    color: whitesmoke;
+}
+
+td p strong {
+    font-weight: bold;
+}
+
+
+
+
+
+/* Services Page CSS Design*/
+
+.hero-services-section {
+    position: relative;
+    background-image: url(../Images/hero.services.png); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;  /* Horizontally centers the content */
+    align-items: center;      /* Vertically centers the content */
+}
+
+#services-intro {
+    background-color: rgb(42, 223, 230);
+    color: black;
+    padding: 10px;
+    margin-top: 35px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Styling for the container holding service boxes */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    background-color: #80878b;
+    margin-top: 15px;
+}
+
+/* Styling for each service box */
+.service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 225px;
+    padding: 20px;
+    background-color: #3a347d;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Needed for rotation effect */
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition */
+}
+
+/* Keyframes for rotation and bounce effect */
+@keyframes rotateBounce {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(0deg); }
+}
+
+/* Animation effect for service box on hover */
+.service-box:hover {
+    animation: rotateBounce 0.6s ease; /* Rotate and bounce effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Styling for images within service boxes */
+.service-box img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+/* Scaling effect on image hover */
+.service-box img:hover {
+    transform: scale(1.1); /* Slightly larger image on hover */
+}
+
+/* Styling for text within service boxes */
+.service-box p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+/* Styling for extra section */
+.extra-section {
+    background-position: center;
+    text-align: center;
+}
+
+/* Styling for overlay */
+.overlay {
+    background-color: #191970;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Styling for extra topic */
+.extra-topic {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Styling for the container holding extra boxes */
+.extra-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Styling for each extra box */
+.extra-box {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e2e3e5 100%);
+    color: #333;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.6s ease;
+}
+
+/* Keyframes for gentle zoom effect */
+@keyframes zoomEffect {
+    0% { transform: scale(1.3); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1.3); }
+}
+
+/* Animation effect for extra box on hover */
+.extra-box:hover {
+    animation: zoomEffect 0.6s ease-in-out;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for images within extra boxes */
+.extra-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Scaling effect on image hover */
+.extra-box img:hover {
+    transform: scale(1.3);
+}
+
+/* Styling for headings within extra boxes */
+.extra-box h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #343a40;
+    font-weight: 600;
+}
+
+/* Styling for text within extra boxes */
+.extra-box p {
+    font-size: 16px;
+    color: #495057;
+    line-height: 1.5;
+}
+
+
+.patient {
+    color: #3603ec;
+}
+
+.outpatient-high li {
+    font-size: 19px;
+    text-align: justify;
+    margin-right: 30px;
+}
+
+#services-OPD h2 {
+    background-color: none;
+    color: black;      
+}
+
+.outpatient-high li {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: lighter;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1708ee;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: 50px;
+    width: auto;
+    height: auto;
+}
+
+.btn:hover {
+    background-color: #e48c19;
+}
+
+.patient-btn {
+    position: absolute;
+    left: 40px;
+    bottom: 100px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.patient-btn:hover:hover {
+    background-color: #e48c19;
+}
+
+
+
+
+/*Doctors Page CSS Design*/
+
+.doctors-intro {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(42, 223, 230); 
+}
+
+.doctor-image {
+    width: 50%; 
+    height: auto;
+    margin-right: 20px; 
+    margin-top: 10px;
+}
+
+.doctor-content {
+    width: 60%;
+    margin-top: 10px;
+}
+
+.doctor-content h2 {
+    font-size: 30px;
+    color: #666; 
+    margin-bottom: 10px;
+    
+}
+
+.doctor-content p {
+    font-size: 17px;
+    color: black; 
+    line-height: 1.6;
+    text-align: justify; 
+}
+
+section.doctors-departments {
+    padding: 20px;
+    background-color: #191970;
+    margin-top: 10px;
+}
+
+.department {
+    margin-bottom: 40px;
+}
+
+.department h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    background-color: rgb(163, 163, 223);
+}
+
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.doctor-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 0;
+}
+
+.doctor-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.doctor-box p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+/* Media Queries */
+
+/* Screen size 1440px - 1280px */
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    .hero-text {
+        font-size: 100px;
+    }
+
+    .container p {
+        font-size: 18px;
+    }
+    
+    .container p:first-of-type {
+        font-size: 18px;
+    }
+    
+    .container p:last-of-type {
+        font-size: 18px;
+    }
+      
+    .Emergency-content {
+        font-size: 18px;
+    }
+      
+    .image-content img {
+        width: 100%;
+        height: 450px;
+        margin-top: 60px;
+    }
+      
+    ul {
+        margin-left: -50px;
+        margin-right: 30px;
+    }
+  
+    .International-content {
+        font-size: 18px;
+    }
+      
+    .Outpatient-content {
+        font-size: 18px;
+    }
+
+    .Doctors-content {
+        grid-template-columns: 1fr 1fr;
+    }
+  
+    ol {
+        font-size: 18px;
+        padding: 10px;
+        margin-right: 30px;
+        margin-left: 10px;
+        margin-top: -430px;
+    }
+    
+    .section4-img img {
+        height: 20%;
+        margin-left: -700px;
+        padding-left: 40px;
+        margin-top: 5%;
+        margin-bottom: 20px;
+    }
+      
+    .facility-section {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); /* 8 columns, each taking equal space */
+        gap: 20px;
+        padding: 40px;
+        max-width: 100%; /* Ensure the section spans the entire width */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+        background-color: black;
+        margin-top: 7px;
+    }
+      
+    .facility-box {
+        background-color: #000080;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .facility-box img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    
+    .facility-box p {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 17px;
+    }
+
+
+
+
+
+    /*........................................................................................*/
+
+
+
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .branch-content {
+        grid-template-columns: 1fr 2fr 1fr; /* Single column for smaller screens */
+        grid-gap: 15px;
+    }
+
+    .branch-image {
+        width: 300px;
+        height: 200px;
+        display: block;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background-color: #eee;
+        grid-row: span 2;
+        margin-bottom: 15px;
+    }
+    
+    .branch-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .branch-info p {
+        font-size: 16px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .branch-paragraph {
+        margin-left: -320px;
+        margin-top: 50px;
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    .branch-details {
+        list-style-type: disc;
+        margin-left: -310px;
+        font-size: 18px;
+        margin-top: 20px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    
+    .branch-location {
+        display: flex;
+        align-items: start;
+        justify-content: left;
+        grid-row: span 2;
+        width: 0;
+        height: 0 auto;
+        margin-right: 10px;
+    }
+
+    .about-table {
+        width: 95%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .about-table th, .about-table td {
+        padding: 2px;
+    }
+    
+    .about-table th {
+        font-size: 15px;
+    }
+    
+    .about-table tr {
+        font-size: 12px;
+    }
+    
+    .about-table td img {
+        max-width: 90%;
+        height: auto;
+        padding: 5px;
+        border: none;
+    }
+
+
+
+    /*..............................................................................................*/
+
+
+
+
+    .hero-text {
+        font-size: 80px;
+    }
+
+    #services-intro {
+        font-size: 19px;
+    }
+    
+    .services-container {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .service-box {
+        width: 200px;
+        height: 300px;
+    }
+
+    .service-box img {
+        width: 180px;
+        height: 230px;
+    }
+
+    .service-box p {
+        font-size: 20px;
+    }
+
+    .extra-box {
+        width: 500px; /* Larger size for extra-box on desktop */
+    }
+
+    .extra-box h4 {
+        font-size: 22px;
+    }
+
+    .extra-box p {
+        font-size: 20px;
+    }
+
+    .outpatient-high {
+        margin-left: 50px;
+    }
+
+    .btn, .patient-btn {
+        font-size: 26px; /* Larger buttons for desktop */
+    }
+
+
+
+
+    /*........................................................................................*/
+
+
+
+    .doctors-intro {
+        padding: 20px;     
+    }
+    
+    .doctor-image {
+        width: 50%; 
+        height: auto;
+        margin-right: 20px; 
+        margin-top: 10px;
+    }
+    
+    .doctor-content {
+        width: 60%;
+        margin-top: 10px;
+    }
+    
+    .doctor-content h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .doctor-content p {
+        font-size: 17px; 
+    }
+    
+    section.doctors-departments {
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
+    .department {
+        margin-bottom: 40px;
+    }
+    
+    .department h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .doctor-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    .doctor-box {
+        border-radius: 8px;
+        padding: 20px;
+    }
+    
+    .doctor-box img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .doctor-box h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .doctor-box p {
+        font-size: 16px;
+    }
+
+
+
+}
+
+
+    
+
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+
+    .Emergency-content {
+        font-size: 15px;
+    }
+    
+    .image-content img {
+        width: 100%;
+        height: 300px;
+        margin-top: 60px;
+    }
+
+    .International-content {
+        font-size: 15px;
+    }
+    
+    .Outpatient-content {
+        font-size: 15px;
+    }
+
+    ol {
+        font-size: 15px;
+        padding: 10px;
+        margin-right: 30px;
+        margin-top: -350px;
+    }
+    
+    .section4-img img {
+        height: 50%;
+        width: 550px;
+        margin-left: -520px;
+        margin-top: 5%;
+        margin-bottom: 20px;
+    }
+    
+    .facility-section {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); /* 8 columns, each taking equal space */
+        gap: 20px;
+        padding: 40px;
+        max-width: 100%; /* Ensure the section spans the entire width */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+        background-color: black;
+        margin-top: 7px;
+    }
+    
+    .facility-box {
+        background-color: #000080;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 10px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .facility-box img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    
+    .facility-box p {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+
+
+    /*...............................................................................................*/
+
+
+
+
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .hero-text {
+        font-size: 80px;
+    }
+    
+    .branch-content {
+        grid-template-columns: 1fr 2fr 1fr; /* Single column for smaller screens */
+        grid-gap: 15px;
+    }
+
+    .branch-image {
+        width: 300px;
+        height: 200px;
+        display: block;
+        border: 1px solid #ddd;
+        padding: 10px;
+        background-color: #eee;
+        grid-row: span 2;
+        margin-bottom: 15px;
+    }
+    
+    .branch-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .branch-info p {
+        font-size: 15px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: justify;
+    }
+    
+    .branch-paragraph {
+        margin-left: -320px;
+        margin-top: 40px;
+        font-size: 17px;
+        text-align: justify;
+    }
+    
+    .branch-details {
+        list-style-type: disc;
+        margin-left: -310px;
+        font-size: 17px;
+        margin-top: 15px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    
+    .branch-location {
+        display: flex;
+        align-items: start;
+        justify-content: left;
+        grid-row: span 2;
+        width: 0;
+        height: 0 auto;
+        margin-right: 10px;
+    }
+
+    .about-table {
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .about-table th, .about-table td {
+        padding: 2px;
+    }
+    
+    .about-table th {
+        font-size: 15px;
+    }
+    
+    .about-table tr {
+        font-size: 12px;
+    }
+    
+    .about-table td img {
+        max-width: 90%;
+        height: auto;
+        padding: 5px;
+        border: none;
+    }
+
+
+
+    /*.......................................................................................*/
+
+
+
+
+    .hero-text {
+        font-size: 60px;
+    }
+
+    .patient-btn {
+        margin-bottom: -80px;
+    }
+    
+    .services-container {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .service-box {
+        width: 160px;
+        height: 220px;
+    }
+
+    .service-box img {
+        width: 140px;
+        height: 150px;
+    }
+
+    .extra-box {
+        width: 400px; /* Larger size for extra-box on desktop */
+    }
+
+    .btn, .patient-btn {
+        font-size: 24px; /* Larger buttons for desktop */
+    }
+
+
+
+    /*............................................................................................*/
+ 
+
+
+    .doctors-intro {
+        padding: 10px;
+    }
+    
+    .doctor-image {
+        width: 50%; 
+        height: 350px;
+        margin-right: 20px; 
+        margin-top: 10px;
+    }
+    
+    .doctor-content {
+        width: 60%;
+        margin-top: 10px;
+    }
+    
+    .doctor-content h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .doctor-content p {
+        font-size: 16px; 
+    }
+    
+    section.doctors-departments {
+        padding: 20px;
+        margin-top: 10px;
+    }
+    
+    .department {
+        margin-bottom: 40px;
+    }
+    
+    .department h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    
+    .doctor-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    
+    .doctor-box {
+        border-radius: 8px;
+        padding: 20px;
+    }
+    
+    .doctor-box img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .doctor-box h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .doctor-box p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .header-container{
+        flex-direction: column;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .nav-links ul li{
+        font-size: 7px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .hero-text {
+        font-size: 60px;
+    }
+
+    .content-section {
+        grid-template-columns: 1fr; /* Switch to one column for tablet */
+        padding: 20px;
+    }
+
+    .Emergency-content p {
+        margin-top: 10px;
+    }
+
+    .International-content p {
+        margin-top: 10px;
+    }
+
+    .Outpatient-content p {
+        margin-top: 10px;
+    }
+
+    .image-content img {
+        width: 100%;
+        height: auto;
+        margin-top: -20px;
+    }
+
+    ul {
+        margin-top: 10px;
+    }
+
+    ol {
+        font-size: 15px;
+        padding: 10px;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    
+    .section4-img img {
+        margin-top: 10px;
+        height: auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .facility-section {
+        grid-template-columns: repeat(3, 1fr); /* Reduce to 4 columns on tablets */
+    }
+
+    .facility-box {
+        padding: 5px;
+    } 
+
+    .facility-box img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .facility-box p {
+        font-size: 15px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablet view */
+    }
+
+    .social-icons {
+        gap: 20px; /* Reduce gap between icons */
+    }
+
+    .footer-nav a {
+        width: 100%; /* Make navigation links full width */
+    }
+
+    .footer-nav {
+        margin-right: 20px;
+    }
+
+
+
+
+   /*......................................................................................*/
+
+
+
+
+
+
+    .branch-content {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        grid-gap: 15px;
+    }
+
+    .branch-image {
+        width: auto;
+        margin: 0 auto;
+        height: auto;
+        margin-left: -10px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .branch-details {
+        font-size: 17px;
+    }
+
+    .branch-info {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .branch-info p {
+        font-size: 17px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: justify;
+    }
+
+    .branch-location {
+        display: flex;
+        align-items: start;
+        justify-content: left;
+        grid-row: span 2;
+        width: 100%;
+        height: 0 auto;
+        margin-right: 10px;
+    }
+
+    .branch-paragraph, .branch-details {
+        margin-left: 0;
+    }
+
+    .about-table {
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .about-table th, .about-table td {
+        padding: 2px;
+    }
+    
+    .about-table th {
+        font-size: 17px;
+    }
+    
+    .about-table tr {
+        font-size: 14px;
+    }
+    
+    .about-table td img {
+        max-width: 90%;
+        height: auto;
+        padding: 5px;
+        border: none;
+    }
+
+
+
+    /*................................................................................................*/
+
+
+
+    .patient-btn {
+        margin-bottom: -80px;
+    }
+
+    .services-container {
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .service-box {
+        width: 220px;
+        height: 250px;
+    }
+
+    .service-box img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .extra-box {
+        width: 300px; /* Adjust width for extra-box */
+    }
+
+    .patient-btn {
+        font-size: 18px; /* Adjust button size for tablet */
+    }
+
+    .btn {
+        margin-left: 270px;
+        font-size: 17px;
+    }
+
+
+
+
+
+    /*........................................................................................*/
+
+
+
+
+    .doctors-intro {
+        display: flex;
+        flex-direction: column; /* Stack elements in a column */
+        align-items: center; /* Center the content */
+        padding: 20px;
+        background-color: rgb(42, 223, 230);
+    }
+    
+    .doctor-image {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px; /* Space between image and content */
+        margin-top: 10px;
+    }
+    
+    .doctor-content {
+        width: 100%; /* Full width for the content */
+        text-align: center; /* Center the content under the image */
+        margin-top: 10px;
+    }
+    
+    .doctor-content h2 {
+        font-size: 30px;
+        color: #666;
+        margin-bottom: 20px; /* Space between heading and image */
+    }
+    
+    .doctor-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .doctor-box img {
+        width: 100px;
+        height: 100px; /* Adjust image size for mobile */
+    }
+
+    .doctor-info h3 {
+        font-size: 16px; /* Adjust name size for mobile */
+    }
+
+    .doctor-info p {
+        font-size: 14px; /* Adjust description size for mobile */
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .header-container{
+        flex-direction: column;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .nav-links ul li{
+        font-size: 7px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .hero-text {
+        font-size: 60px;
+    } 
+
+    .content-section {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .Emergency-content p {
+        margin-top: 10px;
+    }
+
+    .International-content p {
+        margin-top: 10px;
+    }
+
+    .Outpatient-content p {
+        margin-top: 10px;
+    }
+
+    .image-content img {
+        width: 100%;
+        height: auto;
+        margin-top: -5px;
+    }
+
+    ul {
+        margin-left: -20px;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+
+    ol {
+        font-size: 16px;
+        padding: 5px;
+        margin-right: 15px;
+    }
+    
+    .section4-img img {
+        margin-top: 5px;
+        padding-bottom: 10px;
+        height: auto;
+        width: 100%;
+    }
+
+    .facility-section {
+        grid-template-columns: repeat(3, 1fr); /* Reduce to 2 columns */
+    }
+
+    .facility-box img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .facility-box {
+        padding: 5px;
+    } 
+
+    .facility-box p {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr; /* Stack all elements in one column */
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    .footer-left,
+    .footer-nav,
+    .footer-contacts,
+    .footer-socials {
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 100px; /* Smaller logo for mobile */
+    }
+
+    .footer-nav a {
+        width: 100%; /* Full width navigation links */
+    }
+
+    .social-icons {
+        display: flex; /* Ensure flexbox layout */
+        flex-direction: row; /* Align icons in a row */
+        justify-content: center; /* Center the icons horizontally */
+        gap: 10px; /* Adjust gap between icons */
+    }
+    
+    .footer-nav,
+    .footer-contacts,
+    .footer-socials {
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+    
+    .footer-left p {
+        font-size: 12px; /* Slightly smaller text for mobile */
+    }
+
+    .footer-nav {
+        margin-right: 30px;
+    }
+
+
+    /*........................................................................................*/
+
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .branch-content {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        margin-left: -15px;
+    }
+
+    .branch-image {
+        width: 530px;
+        height: auto;
+        margin-left: -10px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .branch-details {
+        font-size: 16px;
+    }
+    
+    .branch-info p {
+        font-size: 15px;
+        margin: 0 auto;
+        width: 90%;
+        text-align: justify;
+        margin-left: 40px;
+    }
+
+    .branch-location {
+        display: flex;
+        align-items: start;
+        justify-content: left;
+        grid-row: span 2;
+        width: 570px;
+        height: 0 auto;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .branch-paragraph, .branch-details {
+        margin-left: 0;
+    }
+
+    .about-table {
+        width: 100%;
+        margin: 0;
+        border: none;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .about-table, .about-table tr, .about-table th, .about-table td {
+        display: block;
+        width: 97%;
+        border: none;
+        text-align: left;
+    }
+
+    .about-table th {
+        display: none; /* Hide table headers */
+    }
+
+    .about-table td img {
+        width: 450px;
+    }
+
+    .about-table tr {
+        margin-bottom: 20px;
+        background-color: #191970;
+        border-radius: 5px;
+        padding: 15px;
+        border: 1px solid #ddd; /* Add border for table row */
+    }
+
+    .about-table td {
+        display: flex;
+        flex-direction: row; /* Display label and value side by side */
+        justify-content: space-between;
+        margin: 5px 0;
+        padding: 10px;
+        border-bottom: 1px solid #ccc; /* Add border for each data row */
+    }
+
+    .about-table td:last-child {
+        border-bottom: none; /* Remove border for the last item */
+    }
+
+    .about-table td::before {
+        content: attr(data-label); /* Use data-label attribute as the label */
+        flex: 1;
+        font-weight: bold;
+        color: #e0e0e0; /* Label color */
+        margin-right: 10px;
+    }
+
+    .about-table td img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .about-table td p {
+        margin: 5px 0;
+        color: whitesmoke;
+    }
+
+    .about-table td[colspan="6"] {
+        background-color: #191970;
+        font-size: 16px;
+        margin: 0;
+        padding: 10px 0;
+        border: none;
+    }
+
+
+
+
+
+
+
+
+    /*.................................................................................................*/
+
+
+
+
+
+
+
+
+
+    .service-box {
+        width: 170px;
+        height: 250px;
+    }
+
+    .service-box img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .extra-box {
+        width: 40%;
+    }
+
+    .patient-btn {
+        margin-bottom: -80px;
+    }
+
+    .btn, .patient-btn {
+        font-size: 18px; /* Smaller buttons for mobile */
+        padding: 8px 15px;
+    }
+
+    .extra-section {
+        padding: 10px; /* Reduce padding for mobile */
+    }
+
+    .btn {
+        margin-left: 30px;
+    }
+
+
+
+
+
+
+
+    /*........................................................................................*/
+
+
+
+
+    .doctors-intro {
+        display: flex;
+        flex-direction: column; /* Stack elements in a column */
+        align-items: center; /* Center the content */
+        padding: 20px;
+        background-color: rgb(42, 223, 230);
+    }
+    
+    .doctor-image {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px; /* Space between image and content */
+        margin-top: 10px;
+    }
+    
+    .doctor-content {
+        width: 100%; /* Full width for the content */
+        text-align: center; /* Center the content under the image */
+        margin-top: 10px;
+    }
+
+    .doctor-content p {
+        font-size: 15px;
+    }
+    
+    .doctor-content h2 {
+        font-size: 25px;
+        color: #666;
+        margin-bottom: 20px; /* Space between heading and image */
+    }
+    
+    .doctor-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .doctor-box img {
+        width: 100px;
+        height: 100px; /* Adjust image size for mobile */
+    }
+
+    .doctor-info h3 {
+        font-size: 16px; /* Adjust name size for mobile */
+    }
+
+    .doctor-info p {
+        font-size: 14px; /* Adjust description size for mobile */
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+
+
+    .header-container{
+        flex-direction: column;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .nav-links ul li{
+        font-size: 7px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .hero-text {
+        font-size: 40px;
+    }
+
+    .hero-home {
+        padding: 20px;
+    }
+
+    .header {
+        height: 800px;
+        width: 100%;
+    }
+
+    .menu-icon {
+        margin-top: -40px;
+        margin-right: 20px;
+        padding-top: 10px;
+    }
+
+    .header-topic {
+        margin-top: -20px;
+        font-size: 40px;
+    }
+
+    label.logo {
+        margin: 0 40px;
+        line-height: 100px;
+        margin-left: 20px;
+    }  
+
+    .content-section {
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+
+    .container {
+        padding: 10px; 
+    }
+    
+    .container p {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    
+    .container p:first-of-type {
+        font-size: 15px;
+    }
+
+    .Emergency-content p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .International-content p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .Outpatient-content p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+    .image-content img {
+        width: 100%;
+        height: auto;
+        margin-top: -35px;
+        padding: 10px;
+    }
+
+    ul {
+        margin-left: -20px;
+        margin-right: 30px;
+        font-size: 14px;
+    }
+
+    ol {
+        font-size: 14px;
+        padding: 5px;
+        margin-right: 15px;
+        margin-left: -10px;
+    }
+    
+    .section4-img img {
+        margin-top: -5px;
+        height: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .facility-section {
+        grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns */
+    }
+
+    .facility-box {
+        padding: 10px;
+    } 
+
+    .facility-box img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .facility-box p {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr; /* Stack all elements in one column */
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    .footer-left,
+    .footer-nav,
+    .footer-contacts,
+    .footer-socials {
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 100px; /* Smaller logo for mobile */
+    }
+
+    .footer-nav a {
+        width: 100%; /* Full width navigation links */
+    }
+
+    .social-icons {
+        display: flex; /* Ensure flexbox layout */
+        flex-direction: row; /* Align icons in a row */
+        justify-content: center; /* Center the icons horizontally */
+        gap: 10px; /* Adjust gap between icons */
+    }
+    
+    .footer-nav,
+    .footer-contacts,
+    .footer-socials {
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+    
+    .footer-left p {
+        font-size: 12px; /* Slightly smaller text for mobile */
+    }
+
+    .footer-nav {
+        margin-right: 20px;
+    }
+
+
+
+
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .branch-content {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        margin-left: -15px;
+    }
+
+    .branch-image {
+        width: 280px;
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .branch-details {
+        font-size: 15px;
+        width: 45%;
+        text-align: justify;
+        margin-left: 10px;
+    }
+
+    .branch-info p {
+        font-size: 15px;
+        margin: 0 auto;
+        width: 45%;
+        text-align: justify;
+        margin-left: 10px;
+    }
+
+    .branch-info {
+        font-size: 15px;
+        margin: 0 auto;
+        width: 45%;
+        text-align: justify;
+        margin-left: 10px;
+    }
+
+    .branch-info {
+        font-size: 15px;
+        width: 600px;
+        margin: 0 auto;
+        text-align: justify;
+        margin-left: 10px;
+    }
+
+    .branch-info .branch-paragraph{
+        width: 600px;
+    }
+
+    .branch-details{
+        width: 260px;
+    }
+
+    .branch-location {
+        display: flex;
+        align-items: start;
+        justify-content: left;
+        grid-row: span 2;
+        width: 200px;
+        height: 0 auto;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .branch-paragraph, .branch-details {
+        margin-left: 0;
+    }
+
+    .about-table {
+        width: 70%;
+        margin: 0;
+        border: none;
+        margin-right: 5px;
+    }
+
+    .about-table, .about-table tr, .about-table th, .about-table td {
+        display: block;
+        width: 70%;
+        border: none;
+        text-align: left;
+        font-size: 13px;
+    }
+
+    .about-table th {
+        display: none; /* Hide table headers */
+    }
+
+    .about-table td img {
+        width: 450px;
+    }
+
+    .about-table tr {
+        margin-bottom: 20px;
+        background-color: #191970;
+        border-radius: 5px;
+        padding: 15px;
+        border: 1px solid #ddd; /* Add border for table row */
+    }
+
+    .about-table td {
+        display: flex;
+        flex-direction: row; /* Display label and value side by side */
+        justify-content: space-between;
+        margin: 5px 0;
+        padding: 10px;
+        border-bottom: 1px solid #ccc; /* Add border for each data row */
+    }
+
+    .about-table td:last-child {
+        border-bottom: none; /* Remove border for the last item */
+    }
+
+    .about-table td::before {
+        content: attr(data-label); /* Use data-label attribute as the label */
+        flex: 1;
+        font-weight: bold;
+        color: #e0e0e0; /* Label color */
+        margin-right: 10px;
+    }
+
+    .about-table td p {
+        margin: 5px 0;
+        color: whitesmoke;
+    }
+
+    .about-table td[colspan="6"] {
+        background-color: #191970;
+        font-size: 13px;
+        margin: 0;
+        padding: 10px 0;
+        border: none;
+    }
+
+
+
+
+
+
+
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #services-intro {
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .service-box {
+        width: 130px;
+        height: 200px;
+    }
+
+    .service-box img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .extra-box {
+        width: 100%;
+    }
+
+    .extra-topic {
+        font-size: 17px;
+    }
+
+    .patient-btn {
+        margin-bottom: -80px;
+    }
+
+    .btn, .patient-btn {
+        font-size: 15px; /* Smaller buttons for mobile */
+        padding: 5px 12px;
+    }
+
+    .btn {
+        margin-left: 20px;
+    }
+
+    .extra-section {
+        padding: 0; /* Reduce padding for mobile */
+    }
+
+    .outpatient-high li {
+        font-size: 15px;
+        margin-right: 0px;
+        padding: 5px;
+    }
+
+
+    /*--------------------------------------------------------------------------------------------------------------*/
+
+    .doctors-intro {
+        display: flex;
+        flex-direction: column; /* Stack elements in a column */
+        align-items: center; /* Center the content */
+        padding: 20px;
+        background-color: rgb(42, 223, 230);
+    }
+    
+    .doctor-image {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px; /* Space between image and content */
+        margin-top: 10px;
+    }
+    
+    .doctor-content {
+        width: 100%; /* Full width for the content */
+        text-align: center; /* Center the content under the image */
+        margin-top: 10px;
+    }
+
+    .doctor-content p {
+        font-size: 14px;
+    }
+    
+    .doctor-content h2 {
+        font-size: 20px;
+        color: #666;
+        margin-bottom: 20px; /* Space between heading and image */
+    }
+    
+    .doctor-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .doctor-box img {
+        width: 100px;
+        height: 100px; /* Adjust image size for mobile */
+    }
+
+    .doctor-info h3 {
+        font-size: 14px; /* Adjust name size for mobile */
+    }
+
+    .doctor-info p {
+        font-size: 12px; /* Adjust description size for mobile */
+    }
+
+}

@@ -1,0 +1,905 @@
+/* Consulting Page CSS Design */
+
+* {
+    margin: 0;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: black;
+    padding: 5px 0;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin-right: 5px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 5px 5px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links ul li a:hover {
+    border: 2px solid white;
+}
+
+.consultation-intro {
+    display: flex;
+    line-height: 2;
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #1B3A57; 
+}
+
+.consultation-intro h2 {
+    font-size: 28px;
+    color: yellow;
+    text-align: center;
+}
+
+.consultation-intro p {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.consulting-form {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #4169E1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.consulting-form h2 {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.consulting-form p {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+form legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: wheat;
+    padding: 0 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+form input[type="text"], form input[type="date"], form input[type="tel"], form input[type="email"], form select, form textarea {
+    width: 100%;
+    padding: 10px;   
+}
+
+form textarea {
+    height: 100px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+form button {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #003366;
+}
+
+footer {
+    background-color: #004d66; /* Main footer color */
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four equal columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-left: 50px;
+}
+
+.footer-left,
+.footer-nav,
+.footer-contacts,
+.footer-socials {
+    text-align: left;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #007a99;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 80%; /* Adjust this width to match the look from your screenshot */
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    background-color: #00ccff;
+}
+
+.footer-contacts ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contacts ul li {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-contacts h3 {
+    color: white;
+}
+
+
+.footer-socials {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-socials h3 {
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    color: wheat;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjust gap between left and right columns */
+}
+
+.column-left, .column-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between icons in each column */
+}
+
+.social-icons img {
+    width: 60px; /* Icon size */
+    height: 60px;
+}
+
+.social-icons a:hover img {
+    filter: invert(50%); /* Optional hover effect */
+}
+
+.emergency-contact {
+    background-color: black;
+    color: #00ffcc;
+    text-align: center;
+    padding: 20px;
+}
+
+.emergency-contact h3 {
+    color: #00ffcc;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #003d4d;
+    font-size: 14px;
+}
+
+
+/* Pharmacy Page CSS Design */
+
+.pharmacy-intro {
+    display: flex;
+    line-height: 2;
+    padding: 100px;
+    background-color: #000080; 
+}
+
+.pharmacy-intro h2 {
+    font-size: 28px;
+    color: yellow;
+    text-align: center;
+}
+
+.pharmacy-intro p {
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.pharmacy-form {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #4169E1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pharmacy-form h1 {
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.pharmacy-form p {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* Media Queries */
+
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+    .consultation-intro {
+        padding: 60px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .consultation-intro p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .consulting-form {
+        padding: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    form button {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+
+
+
+    /*...................................................................................................*/
+
+
+    .pharmacy-intro {
+        padding: 60px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pharmacy-intro h2 {
+        font-size: 26px;
+    }
+
+    .pharmacy-intro p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    .pharmacy-form {
+        padding: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .pharmacy-form h1 {
+        font-size: 25px;
+    }
+
+    .pharmacy-form p {
+        font-size: 19px;
+    }
+
+    form button {
+        font-size: 20px;
+        padding: 10px 18px;
+    }
+
+
+}
+
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .consultation-intro {
+        padding: 60px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .consultation-intro p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .consulting-form {
+        padding: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    form button {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+
+
+
+    /*...............................................................................................*/
+
+
+    .pharmacy-intro {
+        padding: 60px;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .pharmacy-intro h2 {
+        font-size: 25px;
+    }
+
+    .pharmacy-intro p {
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    .pharmacy-form {
+        padding: 30px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .pharmacy-form h1 {
+        font-size: 25px;
+    }
+
+    .pharmacy-form p {
+        font-size: 18px;
+    }
+
+    form legend {
+        font-size: 18px;
+    }
+    
+    form label {
+        font-size: 18px;
+    }
+
+    form button {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+
+}
+
+
+/* Tablet Styles (1023px - 769px) */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .header-container{
+        flex-direction: column;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .nav-links ul li{
+        font-size: 7px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .consultation-intro {
+        padding: 60px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .consultation-intro p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .consulting-form {
+        padding: 30px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .consulting-form p {
+        font-size: 17px;
+    }
+
+    form legend {
+        font-size: 16px;
+    }
+    
+    form label {
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablet view */
+    }
+
+    .social-icons {
+        gap: 20px; /* Reduce gap between icons */
+    }
+
+    .footer-nav a {
+        width: 100%; /* Make navigation links full width */
+    }
+
+    .footer-nav {
+        margin-right: 20px;
+    }
+
+
+
+    /*...........................................................................................*/
+
+
+
+    .pharmacy-intro {
+        padding: 50px;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .pharmacy-intro h2 {
+        font-size: 25px;
+    }
+
+    .pharmacy-intro p {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .pharmacy-form {
+        padding: 30px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .pharmacy-form h1 {
+        font-size: 23px;
+    }
+
+    .pharmacy-form p {
+        font-size: 17px;
+    }
+
+    form legend {
+        font-size: 17px;
+    }
+    
+    form label {
+        font-size: 17px;
+    }
+
+    form button {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .header-container{
+        flex-direction: column;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .nav-links ul li{
+        font-size: 7px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .consultation-intro h2 {
+        font-size: 22px;
+        margin-top: -30px;
+    }
+
+    .consultation-intro p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .consultation-intro {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .consulting-form {
+        padding: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .consulting-form p {
+        font-size: 16px;
+    }
+
+    form legend {
+        font-size: 16px;
+    }
+    
+    form label {
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 18px;
+        padding: 10px 18px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr; /* Stack all elements in one column */
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    .footer-left,
+    .footer-nav,
+    .footer-contacts,
+    .footer-socials {
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 100px; /* Smaller logo for mobile */
+    }
+
+    .footer-nav a {
+        width: 100%; /* Full width navigation links */
+    }
+
+    .social-icons {
+        display: flex; /* Ensure flexbox layout */
+        flex-direction: row; /* Align icons in a row */
+        justify-content: center; /* Center the icons horizontally */
+        gap: 10px; /* Adjust gap between icons */
+    }
+    
+    .footer-nav,
+    .footer-contacts,
+    .footer-socials {
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+    
+    .footer-left p {
+        font-size: 12px; /* Slightly smaller text for mobile */
+    }
+
+    .footer-nav {
+        margin-right: 30px;
+    }
+
+
+    /*............................................................................................*/
+
+
+    .pharmacy-intro {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .pharmacy-intro h2 {
+        font-size: 22px;
+    }
+
+    .pharmacy-intro p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .pharmacy-form {
+        padding: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .pharmacy-form h1 {
+        font-size: 22px;
+    }
+
+    .pharmacy-form p {
+        font-size: 16px;
+    }
+
+    form legend {
+        font-size: 16px;
+    }
+    
+    form label {
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 17px;
+        padding: 10px 18px;
+    }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+    .header-container{
+        flex-direction: column;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 5px;
+        flex-direction: column;
+    }
+
+    .nav-links ul li{
+        font-size: 7px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .consultation-intro h2 {
+        font-size: 15px;
+        margin-top: -30px;
+    }
+
+    .consultation-intro p {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .consultation-intro {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .consulting-form {
+        padding: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .consulting-form p {
+        font-size: 13px;
+    }
+
+    .consulting-form h2 {
+        font-size: 18px;
+    }
+
+    form legend {
+        font-size: 15px;
+    }
+    
+    form label {
+        font-size: 15px;
+    }
+
+    form button {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr; /* Stack all elements in one column */
+        text-align: center;
+        margin-right: 40px;
+    }
+
+    .footer-left,
+    .footer-nav,
+    .footer-contacts,
+    .footer-socials {
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 100px; /* Smaller logo for mobile */
+    }
+
+    .footer-nav a {
+        width: 100%; /* Full width navigation links */
+    }
+
+    .social-icons {
+        display: flex; /* Ensure flexbox layout */
+        flex-direction: row; /* Align icons in a row */
+        justify-content: center; /* Center the icons horizontally */
+        gap: 10px; /* Adjust gap between icons */
+    }
+    
+    .footer-nav,
+    .footer-contacts,
+    .footer-socials {
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+    
+    .footer-left p {
+        font-size: 12px; /* Slightly smaller text for mobile */
+    }
+
+    .footer-nav {
+        margin-right: 20px;
+    }
+
+    .pharmacy-intro {
+        padding: 10px;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .pharmacy-intro h2 {
+        font-size: 18px;
+    }
+
+    .pharmacy-intro p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .pharmacy-form {
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .pharmacy-form h1 {
+        font-size: 18px;
+    }
+
+    .pharmacy-form p {
+        font-size: 14px;
+    }
+
+    form legend {
+        font-size: 14px;
+    }
+    
+    form label {
+        font-size: 14px;
+    }
+
+    form button {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+    
+}
+
